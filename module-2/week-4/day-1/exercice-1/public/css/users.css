@@ -1,0 +1,18 @@
+body{
+    position: absolute;
+    background-color: rgb(46, 61, 61);
+    color: white;
+    margin-top: 1rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    border: 2px solid white;
+    padding: 4px;
+}
+
+h1{
+    margin-top: 2rem;
+}

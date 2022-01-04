@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<body>
+
+    <a href="/">home</a>
+    <a href="/about">About</a>
+    
+    <h1>Contact Page from hbs</h1>
+
+    {{#if isAdmin}}
+        <h2>Welcome home, admin</h2>
+        {{else}}
+        <p>who are you ?</p>
+    {{/if}}
+
+    <ul>
+        {{#each totos}}
+          <li>I am {{name}} I am {{age}} years old</li>
+          {{!-- <li>I am {{this.name}} I am {{this.age}} years old</li> --}}
+        {{/each}}
+    </ul>
+
+    <ol>
+        {{#unless hasShoes}}
+            <p>You really should weat some shoes !!</p>
+        {{/unless}}
+
+    {{#each someOtherUsers}}
+        <li>
+            {{this}}
+        </li>
+    {{/each}}
+    </ol>
+
+</body>
+</html>

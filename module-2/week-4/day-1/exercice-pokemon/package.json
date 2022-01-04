@@ -1,0 +1,16 @@
+{
+  "name": "exercice-pokemon",
+  "version": "1.0.0",
+  "description": "exercice pokemon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon -e js,hbs index.js"
+  },
+  "author": "moi",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "hbs": "^4.2.0"
+  }
+}

@@ -1,0 +1,120 @@
+ * {
+    box-sizing: border-box;
+}
+
+.box{
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+    margin-left: 5rem;
+}
+
+.red-box{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-style: dotted;
+    margin: 50px;
+}
+
+table{
+    margin: 50px;
+}
+
+table tbody th, td{
+    width: 300px;
+    height: 150px;
+    border: solid 2px black;
+
+}
+
+th, td {
+    border: solid 2px black;
+}
+
+table tbody tr:nth-child(2) td:nth-child(odd){
+    background-color: aquamarine;
+}
+
+/* A 300px width element containing nested children.
+Allowed tag: div
+Hints: box-sizing, margin, nth-child, padding, text-align, width */
+
+.iteration3 .large-block, .large-block2{
+    margin-bottom: 20px;
+    border: solid 2px black;
+    padding: 10px 10px 0; 
+}
+
+.iteration3 .large-block > div, .large-block2 > div {
+    /* width: 90%; */
+    background-color: purple;
+    padding: .2rem;
+    color: white;
+}
+
+.iteration3 .large-block div:nth-last-child(even), .large-block2 div:nth-last-child(odd){
+    box-sizing: content-box;
+    width: 10% ;
+}
+.iteration3 .large-block div:nth-last-child(odd), .large-block2 div:nth-last-child(even){
+    margin: .3rem 0 0;
+    box-sizing: content-box;
+    width: 90% ;
+}
+
+.iteration3 .large-block2 >div{
+    text-align: right;
+}
+.iteration3 .large-block2 div:nth-child(1){
+    margin-left: 10%;
+}
+
+.bonus1{
+    color: white;
+}
+
+.bonus1 .row1{
+   font-size: 0;
+}
+
+
+.row1 >div, .row2>div{
+    display: inline-block;
+    font-size: 2em;
+}
+.row1 >div{
+    width: 25%;
+    font-size: 1rem;
+    display: inline-block;
+    border-collapse: collapse;
+    background-color: red;
+    border-color: black !important;
+}
+.row2 >div{
+    display: block;
+    display: inline;
+    border-collapse: collapse;
+    background-color: black;
+    border-color: red !important;
+}
+
+.row1 div:nth-child(1n), .row2 div:nth-child(1n){
+    border-right: 2px solid;
+}
+
+.row1 div:first-child, .row2 div:first-child{
+    border-left: 2px solid;
+}
+
+.bonus2 .row3, .row4{
+    display: flex;
+}
+
+.row3 >div{
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+    margin: 0;
+}

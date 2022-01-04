@@ -1,0 +1,14 @@
+    <h1>Users Page</h1>
+
+    {{!-- <ul>
+        {{#each user}}
+            <img src="{{picture}}" alt="{{name}}">
+            <li>{{name}} {{lastName}}</li>
+        {{/each}}
+    </ul> --}}
+
+    {{#each user}}
+
+        {{> user this}}
+
+    {{/each}}
