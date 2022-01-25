@@ -1,0 +1,28 @@
+<h1 id="title-main">{{title}}</h1>
+
+<p class="text">Welcome to {{title}}</p>
+
+<input type="text" id="search-bar" />
+<button>search</button>
+<hr />
+
+<button id="btn-sort">sort</button>
+
+<hr />
+
+<div class="buttons">
+  <button data-action="sleep">action 1</button>
+  <button data-action="eat">action 2</button>
+  <button data-action="dance">action 3</button>
+</div>
+
+<p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+  ratione.</p>
+
+  <div id="diy">
+  {{!-- on lcik on the following button, use the input's value to fetch one user from the db and write it's infos in the p --}}
+  <input id="one-user-id" type="text" placeholder="put a user mongo id here">
+  <button id="btn-fetch-one-user">fetch one user</button>
+  <p id="result-one-user">
+  </p>
+</div>
